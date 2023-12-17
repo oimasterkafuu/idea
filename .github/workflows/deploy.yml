@@ -115,20 +115,6 @@ jobs:
                   tag_name: refs/tags/${{ needs.tag.outputs.newversion }}
                   name: ${{ needs.tag.outputs.newversion }}
                   body: |
-                      ## Release ${{ needs.tag.outputs.newversion }} :tada:
-
-                      Hello, there :wave: We've got release ${{ needs.tag.outputs.newversion }} for you!
-
-                      You can download the `dist.zip` file from the Assets section below to get the automatically built static resources and deploy them to your own server.
-
-                      The SHA256 checksum of the `dist.zip` file is `${{ env.sha256 }}`. You can use this to verify the integrity of the file :lock:
-
-                      Or, you can go to the [online demo](https://idea.oimaster.top/) to view the latest production version :rocket:
-
-                      Enjoy! :kissing_heart:
-
-                      ---
-
                       ## 发行版 ${{ needs.tag.outputs.newversion }} :tada:
 
                       您好，这里是 oimasterkafuu :wave: 我们为您带来了 ${{ needs.tag.outputs.newversion }} 版本的发布！

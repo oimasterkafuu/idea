@@ -144,7 +144,7 @@ export default {
                         query.get(survey).then(
                             (survey) => {
                                 survey.destroy().then(() => {
-                                    this.$router.go(0);
+                                    location.reload();
                                 });
                             },
                             () => {

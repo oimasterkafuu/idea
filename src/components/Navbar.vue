@@ -96,7 +96,7 @@ export default {
     methods: {
         logout() {
             AV.User.logOut();
-            this.$router.go(0);
+            location.reload();
             this.user = AV.User.current();
         }
     }
